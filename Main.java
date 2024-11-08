@@ -8,5 +8,7 @@ public class Main {
         window.setResizable(false);
         window.setSize(500, 500);
         window.setVisible(true);
+
+        System.out.println("Hello World!");
     }
 }
