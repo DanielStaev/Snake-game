@@ -1,8 +1,6 @@
-
 public class Main {
-    public static void main(String[] args) {
-
-        Window screen = new Window();
-        screen.createWindow();
+    public static void main(String[] args){
+        Window window = new Window();
+        window.createWindow();
     }
 }
