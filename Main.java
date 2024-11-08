@@ -6,7 +6,7 @@ public class Main {
         window.setTitle("Snake Game");
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         window.setResizable(false);
-        window.setSize(500, 500);
+        window.setSize(600, 600);
         window.setVisible(true);
 
         System.out.println("Hello World!");
