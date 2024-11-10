@@ -10,12 +10,12 @@ public class Window extends JFrame {
         this.setResizable(false);
         this.setSize(600, 600);
         this.getContentPane().setBackground(Color.black);
+        this.setLocationRelativeTo(null);
 
         Snake snake = new Snake(); // Calling the snake class
         snake.setOpaque(false); //Making the snake panel transparent
         this.add(snake);//adding snake
-
-        this.setLocationRelativeTo(null);
+        
         this.setVisible(true);
         
         
