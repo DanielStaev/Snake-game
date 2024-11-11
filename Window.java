@@ -15,10 +15,11 @@ public class Window extends JFrame {
         Snake snake = new Snake(); // Calling the snake class
         snake.setOpaque(false); //Making the snake panel transparent
         this.add(snake);//adding snake
-        
+
         this.setVisible(true);
         
-        
+        Timer timer = new Timer(1000 / 60, e -> snake.repaint()); // Repaint at 60 FPS
+        timer.start();
     }
 
    

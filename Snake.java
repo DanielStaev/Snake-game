@@ -2,7 +2,13 @@ import java.awt.*;
 import javax.swing.*;
 
 
-public class Snake extends JPanel{
+public class Snake extends JPanel {
+    SnakeMovement snakeMovement = new SnakeMovement();
+
+    public Snake() {
+        this.addKeyListener(snakeMovement);
+        this.setFocusable(true);
+    }
 
     public void paint(Graphics g) {
         super.paint(g); // Call the superclass's paint method
@@ -12,7 +18,7 @@ public class Snake extends JPanel{
     public void drawSnake(Graphics g) {
         Graphics2D g2D = (Graphics2D) g;
         g2D.setColor(Color.green);
-        g2D.fillRect(100, 100, 20, 20);
+        g2D.fillRect(snakeMovement.getSnakeX(), snakeMovement.getSnakeY(), 20, 20);
     }
     
 }
